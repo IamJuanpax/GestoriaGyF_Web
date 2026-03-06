@@ -1,48 +1,317 @@
-GestoriaGyF
+📌 Visión General - GestoriaGyF
 
-📌 Visión General
-Plataforma web de Gestoría Integral con enfoque en conversión. El sitio debe ser una experiencia fluida y profesional sin importar desde dónde se acceda.
+Plataforma web de Gestoría Integral enfocada en captación de clientes y generación de consultas rápidas.
+
+El objetivo principal del sitio no es solo informar servicios, sino convertir visitantes en contactos vía WhatsApp o llamada directa.
+
+El diseño prioriza:
+
+Claridad de servicios
+
+Confianza profesional
+
+Rapidez de contacto
+
+Experiencia fluida en dispositivos móviles
 
 🛠️ Stack Tecnológico
-Framework: Next.js (App Router)
 
-Estilos: Tailwind CSS (Utilizando Breakpoints Responsivos)
+Framework
+Next.js (App Router)
 
-Animaciones: Framer Motion (Optimizadas para no pesar en móviles)
+Estilos
+Tailwind CSS
 
-Iconos: Lucide React
+Animaciones
+Framer Motion (animaciones livianas y solo cuando aporten UX)
 
-Comunicación: WhatsApp API Link
+Iconos
+Lucide React
 
-📱 Estrategia Responsive (Multi-dispositivo)
-El diseño se adaptará automáticamente según el ancho de pantalla:
+Imágenes optimizadas
+Next.js Image
 
-Mobile (Smartphone): Menú tipo "hamburguesa", tarjetas de empleados en una sola columna, botones de contacto grandes y táctiles.
+Comunicación directa
 
-Tablet: Grid de servicios en 2 columnas, optimización de espacios en blanco.
+WhatsApp Link API
 
-Desktop (PC/Laptop): Layout completo, navegación extendida, grid de empleados en 3 o 4 columnas con efectos de hover avanzados.
+Click-to-Call
 
-📋 Requerimientos Detallados
-1. Secciones con Adaptabilidad
-Navbar: En PC será una barra horizontal; en celulares será un icono de menú que despliega las opciones.
+Opcional recomendable
 
-Sección Staff (Responsive Grid): * Móvil: 1 columna (énfasis en la foto y descripción vertical).
+Schema.org LocalBusiness para SEO
 
-Tablet: 2 columnas.
+Google Analytics / Plausible para medir conversiones
 
-Desktop: 3 o más columnas según diseño.
+Meta Pixel (si luego hacen publicidad)
 
-Imágenes: Uso del componente <Image /> de Next.js para carga diferida (lazy loading) y redimensión automática, asegurando que la web vuele en redes 4G/5G.
+📱 Estrategia Responsive
+Mobile First (muy importante)
 
-2. Micro-interacciones (Framer Motion)
-Toque vs Hover: En dispositivos táctiles (móviles), las animaciones de hover se desactivarán o cambiarán por animaciones de entrada (in-view) para no confundir al usuario.
+Más del 80% de las consultas de gestorías vienen desde celular.
 
-Botón de WhatsApp: En móviles, el botón será más prominente para facilitar el pulgar del usuario.
+Mobile
 
-🛠️ Reglas de Oro para el Desarrollo
-Flexbox & Grid: Se prohíben anchos fijos (ej: width: 800px). Todo será w-full o porcentual.
+Menú hamburguesa
 
-Tipografía Escala: Los títulos serán más grandes en PC y se reducirán proporcionalmente en móviles para evitar que el texto se "corte".
+Botón flotante de WhatsApp
 
-Click-to-Call: Los números de teléfono y botones de WhatsApp deben ser disparadores de acción directa.
+Servicios en tarjetas verticales
+
+Botones grandes para el pulgar
+
+Click to call visible
+
+Tablet
+
+Grid de servicios en 2 columnas
+
+Mejor aprovechamiento de espacios
+
+Desktop
+
+Grid de 3 o 4 columnas
+
+Hover effects
+
+Layout más espacioso
+
+📋 Arquitectura de la Página (MUY IMPORTANTE)
+
+Te recomiendo esta estructura porque convierte mucho mejor.
+
+1️⃣ Hero Section (Lo primero que ve el usuario)
+
+Debe responder en 3 segundos:
+
+Qué hacen
+
+Dónde
+
+Cómo contactarlos
+
+Ejemplo:
+
+Gestoría Integral para tus Trámites
+AFIP / ARBA / Automotor / Antecedentes
+
+"Nos encargamos de tus trámites para que no pierdas tiempo."
+
+Botones:
+
+Consultar por WhatsApp
+
+Llamar ahora
+
+2️⃣ Sección de Servicios
+
+Tarjetas claras con iconos grandes.
+
+Ejemplo:
+
+ARCA / AFIP
+
+Monotributo
+
+Inscripciones
+
+Facturación
+
+ARBA
+
+Ingresos Brutos
+
+Deudas
+
+Regularización
+
+Automotor
+
+Transferencias
+
+Formularios 08
+
+Patentes
+
+Multas
+
+Antecedentes Penales
+Otros Trámites
+
+Cada tarjeta debería tener:
+
+Icono
+
+2 líneas de explicación
+
+botón Consultar
+
+3️⃣ Cómo Funciona (Muy útil para gestorías)
+
+3 pasos simples:
+
+1️⃣ Nos contactás por WhatsApp
+2️⃣ Enviás la documentación
+3️⃣ Nosotros realizamos el trámite
+
+Esto reduce fricción.
+
+4️⃣ Staff / Equipo
+
+Acá agregás confianza.
+
+Grid responsive como planteaste.
+
+Cada tarjeta:
+
+Foto
+
+Nombre
+
+Especialidad
+
+Años de experiencia
+
+5️⃣ Testimonios (MUY recomendable)
+
+Ejemplo:
+
+⭐️⭐️⭐️⭐️⭐️
+"Me resolvieron el trámite de transferencia en el día."
+
+Esto aumenta conversión.
+
+6️⃣ CTA Final (Call to Action)
+
+Gran bloque final:
+
+"¿Necesitás ayuda con un trámite?"
+
+Botones grandes:
+
+WhatsApp
+
+Llamar
+
+🛠️ Mejora Técnica Importante
+Botón flotante WhatsApp (muy recomendable)
+
+Visible en todo momento.
+
+position: fixed
+bottom: 20px
+right: 20px
+
+Esto sube mucho las consultas.
+
+🎨 Uso de Imágenes Cómicas e Intuitivas
+
+Tu idea es excelente.
+
+La gente entiende más rápido con humor visual.
+
+Ejemplos:
+
+AFIP / ARCA
+
+Persona confundida con papeles
+➡️ gestor resolviendo
+
+Multas
+
+Auto rodeado de multas
+➡️ gestor quitándolas
+
+Transferencia
+
+Persona vendiendo auto
+➡️ gestor con formulario 08
+
+Antecedentes
+
+Escudo o certificado limpio
+
+Estilo recomendado
+
+Tipo:
+
+ilustración vectorial
+
+estilo caricatura profesional
+
+simple
+
+colores suaves
+
+Algo parecido a:
+
+Notion
+
+Stripe
+
+Mailchimp
+
+🧠 Mejora UX muy importante
+
+Los servicios NO deben ser texto largo.
+
+La gente quiere identificar rápido:
+
+✔ AFIP
+✔ ARBA
+✔ Autos
+✔ Multas
+
+Por eso:
+
+iconos grandes + imagen divertida + título corto
+
+🚀 Mejora SEO (Muy recomendable)
+
+Crear páginas individuales:
+
+/servicios/afip
+/servicios/arba
+/servicios/transferencia-automotor
+/servicios/antecedentes-penales
+
+Esto ayuda a posicionar en Google.
+
+Ejemplo:
+
+"Gestoría transferencia automotor en Buenos Aires"
+
+🔥 Mejora que casi nadie pone (pero convierte MUCHO)
+
+Sección:
+
+¿Qué trámites resolvemos hoy?
+
+Ejemplo tipo lista rápida:
+
+✔ Alta de Monotributo
+✔ Baja de Monotributo
+✔ Transferencia de Auto
+✔ Deudas ARBA
+✔ Pago de Multas
+
+Botón: Consultar ahora
+
+⚡ Mejora Técnica para Next.js
+
+Te recomiendo agregar:
+
+src/
+  app/
+  components/
+  sections/
+  services/
+  animations/
+
+Componentizar:
+
+Hero.tsx
+Services.tsx
+Staff.tsx
+Testimonials.tsx
+CTA.tsx
