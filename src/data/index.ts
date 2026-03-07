@@ -64,24 +64,24 @@ export const steps: Step[] = [
 export const staff: StaffMember[] = [
   {
     id: "1",
-    name: "Gastón López",
-    role: "Gestor Principal",
+    name: "Gustavo Lovazzano",
+    role: "Mandatario Automotor",
     specialty: "AFIP / ARCA · Impuestos nacionales",
-    years: 12,
+    years: 4,
   },
   {
     id: "2",
-    name: "Fernanda Ruiz",
-    role: "Gestora",
+    name: "Federico",
+    role: "Gestor",
     specialty: "ARBA · Ingresos Brutos",
-    years: 8,
+    years: 4,
   },
   {
     id: "3",
-    name: "Martín González",
-    role: "Gestor de Automotores",
-    specialty: "Transferencias · Formulario 08",
-    years: 10,
+    name: "Juan Pablo Britos",
+    role: "Pasante",
+    specialty: "Informatica",
+    years: 1,
   },
 ];
 
@@ -120,4 +120,4 @@ export const quickServices = [
 
 export const WHATSAPP_NUMBER = "5491158008037";
 export const PHONE_NUMBER = "+54 9 11 5800-8037";
-export const BUSINESS_ADDRESS = "Buenos Aires, Argentina";
+export const BUSINESS_ADDRESS = "Yapeyú 2074, Buenos Aires";

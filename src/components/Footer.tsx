@@ -14,8 +14,8 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-900 text-gray-300">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
             <span className="text-xl font-bold text-white">
@@ -73,6 +73,23 @@ export default function Footer() {
                 {BUSINESS_ADDRESS}
               </li>
             </ul>
+          </div>
+
+          {/* Map */}
+          <div>
+            <h3 className="text-white font-semibold mb-3">Ubicación</h3>
+            <div className="rounded-lg overflow-hidden border border-gray-700">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7698882665397!2d-58.41685492347!3d-34.60900857294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7eb1f8f6bb%3A0x11bbd7d4b1d7d1d7!2sYapey%C3%BA%202074%2C%20C1429%20CABA!5e0!3m2!1ses!2sar!4v1709826000000!5m2!1ses!2sar"
+                width="100%"
+                height="180"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Ubicación de GestoríaGyF - Yapeyú 2074, Buenos Aires"
+              ></iframe>
+            </div>
           </div>
         </div>
 
