@@ -118,6 +118,6 @@ export const quickServices = [
   "Antecedentes Penales",
 ];
 
-export const WHATSAPP_NUMBER = "5491100000000";
-export const PHONE_NUMBER = "+54 9 11 0000-0000";
+export const WHATSAPP_NUMBER = "5491158008037";
+export const PHONE_NUMBER = "+54 9 11 5800-8037";
 export const BUSINESS_ADDRESS = "Buenos Aires, Argentina";

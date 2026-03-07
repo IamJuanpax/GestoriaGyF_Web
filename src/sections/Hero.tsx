@@ -66,7 +66,7 @@ export default function Hero() {
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-green-500 hover:bg-green-600 text-white font-bold text-lg shadow-lg active:scale-95 transition-all duration-200"
+              className="flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-[#25D366] hover:bg-[#1DA851] text-black font-bold text-lg shadow-lg active:scale-95 transition-all duration-200"
             >
               <MessageCircle className="w-6 h-6" />
               Consultar por WhatsApp

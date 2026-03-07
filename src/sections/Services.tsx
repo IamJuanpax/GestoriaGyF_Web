@@ -101,7 +101,7 @@ export default function Services() {
                   href={whatsappHref(service.title)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 mt-2 px-4 py-3 rounded-xl bg-green-500 hover:bg-green-600 text-white font-semibold text-sm active:scale-95 transition-all duration-200"
+                  className="flex items-center justify-center gap-2 mt-2 px-4 py-3 rounded-xl bg-[#25D366] hover:bg-[#1DA851] text-black font-semibold text-sm active:scale-95 transition-all duration-200"
                 >
                   <MessageCircle className="w-4 h-4" />
                   Consultar
