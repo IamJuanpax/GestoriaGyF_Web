@@ -87,6 +87,7 @@ export default function Footer() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+                sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
                 title="Ubicación de GestoríaGyF - Yapeyú 2074, Buenos Aires"
               ></iframe>
             </div>
